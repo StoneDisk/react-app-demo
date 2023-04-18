@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div>
-      <h1>Advanced React Demo</h1>
-      <p>Exploring advanced features of React.js</p>
+      <h1>React App Demo</h1>
+      <h2>Creating Interactive User Interface Components using React.js</h2>
       <IncrementNumberSection></IncrementNumberSection>
       <SnackProductsSection></SnackProductsSection>
       <KitchenItemsSection></KitchenItemsSection>
