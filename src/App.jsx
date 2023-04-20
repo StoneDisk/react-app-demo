@@ -3,6 +3,7 @@ import IncrementNumberSection from './components/IncrementNumberSection';
 import SnackProductsSection from './components/SnackProductsSection';
 import KitchenItemsSection from './components/KitchenItemsSection';
 import RecipeInformationSection from './components/RecipeInformationSection';
+import ToggleCardSection from './components/ToggleCardSection';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <IncrementNumberSection></IncrementNumberSection>
       <SnackProductsSection></SnackProductsSection>
       <KitchenItemsSection></KitchenItemsSection>
-      <RecipeInformationSection></RecipeInformationSection>
+      <ToggleCardSection></ToggleCardSection>
+      {/* <RecipeInformationSection></RecipeInformationSection> */}
     </div>
   )
 }
