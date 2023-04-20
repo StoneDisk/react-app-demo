@@ -22,8 +22,9 @@ function RecipeInformationSection() {
             const {results} = recipes
             setRecipes(results);
         }
-
-        getRecipes("burrito");
+        // Call this function when you want to search and display
+        // a list of recipes
+        // getRecipes("burrito");
     }, []);
 
     return (

@@ -14,8 +14,8 @@ function App() {
       <IncrementNumberSection></IncrementNumberSection>
       <SnackProductsSection></SnackProductsSection>
       <KitchenItemsSection></KitchenItemsSection>
+      <RecipeInformationSection></RecipeInformationSection>
       <ToggleCardSection></ToggleCardSection>
-      {/* <RecipeInformationSection></RecipeInformationSection> */}
     </div>
   )
 }
