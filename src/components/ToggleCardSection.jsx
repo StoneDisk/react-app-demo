@@ -1,5 +1,5 @@
-import WeatherCard from "./WeatherCard";
 import { currentWeather } from "../datasource/weather_data";
+import WeatherCard from "./WeatherCard";
 
 
 function ToggleCardSection() {
@@ -7,7 +7,7 @@ function ToggleCardSection() {
     return (
         <section>
             <h2>Toggle Card Section</h2>
-            <WeatherCard weatherProps={currentWeather}></WeatherCard>
+            <WeatherCard weatherForecast={currentWeather}></WeatherCard>
         </section>
     );
 }
