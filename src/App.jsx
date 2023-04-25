@@ -4,6 +4,7 @@ import SnackProductsSection from './components/SnackProductsSection';
 import KitchenItemsSection from './components/KitchenItemsSection';
 import RecipeInformationSection from './components/RecipeInformationSection';
 import ToggleCardSection from './components/ToggleCardSection';
+import AddSnackSection from './components/AddSnackSection';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <KitchenItemsSection></KitchenItemsSection>
       <RecipeInformationSection></RecipeInformationSection>
       <ToggleCardSection></ToggleCardSection>
+      <AddSnackSection></AddSnackSection>
     </div>
   )
 }
