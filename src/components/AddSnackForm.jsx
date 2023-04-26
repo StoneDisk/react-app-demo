@@ -1,15 +1,42 @@
 import { useState } from "react";
-import SnackList from "./SnackList";
+import SnackProductItem from "./SnackProductItem";
+import { snacks } from "../datasource/snack_data";
 
 function AddSnackForm() {
   const [brandName, setBrandName] = useState("");
   const [flavor, setFlavor] = useState("");
   const [mainIngredient, setMainIngredient] = useState("");
+  const [snackProducts, setSnackProducts] = useState(snacks);
 
   function handleFormSubmission(event) {
     event.preventDefault();
+    if (!brandName || !flavor || !mainIngredient) {
+      return;
+    }
+
+    const snackID = snackProducts.length + 1;
+    const addedSnack = {
+      id: snackID,
+      brand_Name: brandName,
+      flavor: flavor,
+      main_Ingredient: mainIngredient,
+    };
+
+    setSnackProducts((snackProducts) => [...snackProducts, addedSnack]);
     console.log("form submitted successfully!");
+    console.log(snackProducts);
   }
+
+  const snackItems = snackProducts.map((snackProduct) => {
+    return (
+      <SnackProductItem
+        key={snackProduct.id}
+        brand_Name={snackProduct.brand_Name}
+        flavor={snackProduct.flavor}
+        main_Ingredient={snackProduct.main_Ingredient}
+      />
+    );
+  });
 
   return (
     <div>
@@ -37,7 +64,9 @@ function AddSnackForm() {
         />
         <button type="submit">Add</button>
       </form>
-      <SnackList />
+      <div>
+        {snackItems}
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../assets/styles/SnackItems.css";
 import { snacks } from "../datasource/snack_data";
 
-function SnackItems() {
+function SnackItems({brandName, flavor, mainIngredient}) {
     const [snackItems, setSnackItems] = useState(snacks);
 
     const clearAll = () => {
